@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@ body {
     url("./images/back.jpg");
   background-position: center;
   background-size: cover;
+
+  font-family: "Lobster", cursive;
 }
 header {
   background-color: black;
@@ -34,10 +37,12 @@ ul {
 button {
   cursor: pointer;
   background-color: gray;
-  color: white;
+  color: black;
   border: none;
   border-radius: 10px;
+  font-family: "Fjalla One", sans-serif;
   padding: 0.7rem 1rem;
+  width: 10rem;
 }
 /* button:active {
   background-color: green;
@@ -61,7 +66,7 @@ section {
 
 .msg-txt {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: antiquewhite;
   margin-bottom: 1.5rem;
 }
@@ -91,12 +96,17 @@ div img {
   width: 40rem;
   border: 2px solid black;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  font-family: "Fjalla One", sans-serif;
 }
 .output-txt {
   background-color: azure;
   margin-top: 2rem;
   overflow: scroll;
+}
+
+.green {
+  background-color: #95ff64;
 }
 
 @media screen and (max-width: 1000px) {
