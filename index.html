@@ -16,24 +16,37 @@
   <body>
     <header>
       <nav>
-        <h1>Star Wars Translator</h1>
+        <h1 class="title">Star Wars Translator</h1>
         <ul>
-          <button class="yellow">yelow</button>
-          <button class="red">red</button>
-          <button class="blue">blue</button>
+          <button class="yoda">Yoda</button>
+          <button class="sith">Sith</button>
+          <button class="mando">Mandalorian</button>
         </ul>
       </nav>
     </header>
     <section>
-      <div class="logo"><img alt="star wars gif" /></div>
-      <div class="msg-txt"></div>
-      <form>
-        <input type="text" class="input-txt" />
-      </form>
+  
+        <div class="one">
+            <div><h3 class="msg-txt"> WELCOME! Choose your lang </h3></div>
+            <div class="logo">
+              <img src="./images/yoda.gif" alt="star wars gif" />
+            </div>
+            <button class="submit-btn">Translate</button>
+        </div>
+ 
+        <div class="two">
+              
+        <textarea
+        name="input-txt"
+        class="input-txt"
+        placeholder="Write  here to translate"
+        autofocus
+      ></textarea>
+  
 
-      <button class="submit-btn">Translate</button>
-
-      <div class="output-txt"></div>
+      <div class="output-txt"> </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

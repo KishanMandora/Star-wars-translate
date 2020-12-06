@@ -3,3 +3,123 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("./images/back.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  display: flex;
+  flex: 1 1 25rem;
+  justify-content: space-around;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+}
+/* button:active {
+  background-color: green;
+} */
+.title {
+  flex: 2 1 25rem;
+  font-size: 2rem;
+  align-self: center;
+}
+section {
+  min-height: 90vh;
+  width: 70%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1 1 30rem;
+  align-items: center;
+}
+
+.msg-txt {
+  text-align: center;
+  font-size: 1.5rem;
+  color: antiquewhite;
+  margin-bottom: 1.5rem;
+}
+div img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.submit-btn {
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  background-color: papayawhip;
+  border: none;
+  margin: 2rem 0;
+  padding: 2rem 5rem;
+  width: 100%;
+  transition: all 0.5s;
+}
+.submit-btn:hover {
+  background-color: plum;
+  font-weight: bolder;
+}
+.input-txt,
+.output-txt {
+  height: 15rem;
+  width: 40rem;
+  border: 2px solid black;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.output-txt {
+  background-color: azure;
+  margin-top: 2rem;
+  overflow: scroll;
+}
+
+@media screen and (max-width: 1000px) {
+  nav h1 {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .one {
+    display: flex;
+    flex: 1 1 55rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .two {
+    width: 100%;
+  }
+  .output-txt,
+  .input-txt {
+    width: 100%;
+  }
+}
