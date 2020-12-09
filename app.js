@@ -11,12 +11,11 @@ const myVoice = voices[45];
 const inputTxt = document.querySelector(".input-txt");
 const outputTxt = document.querySelector(".output-txt");
 const cngBtns = document.querySelectorAll("ul button");
-submitBtn.addEventListener("click", speakMe);
 
 function defaultOp() {
   mainImg.setAttribute("src", "./images/yoda.gif");
   msgTxt.innerText = "May the force be with you";
-  url = "	https://api.funtranslations.com/translate/yoda.json";
+  url = "https://api.funtranslations.com/translate/yoda.json";
   yodaBtn.style.backgroundColor = "#95ff64";
   mandoBtn.style.backgroundColor = "#ffd7f6";
   sithBtn.style.backgroundColor = "#ffd7f6";
@@ -58,3 +57,4 @@ mandoBtn.addEventListener("click", () => {
   sithBtn.style.backgroundColor = "#ffd7f6";
   yodaBtn.style.backgroundColor = "#ffd7f6";
 });
+submitBtn.addEventListener("click", speakMe);
