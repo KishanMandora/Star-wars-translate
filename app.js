@@ -53,7 +53,7 @@ sithBtn.addEventListener("click", () => {
 mandoBtn.addEventListener("click", () => {
   mainImg.setAttribute("src", "./images/mando.gif");
   msgTxt.innerText = "There is still hope";
-  url = "https://api.funtranslations.com/translate/pig-latin";
+  url = "https://api.funtranslations.com/translate/mandalorian.json";
   mandoBtn.style.backgroundColor = "#ff853e";
   sithBtn.style.backgroundColor = "#ffd7f6";
   yodaBtn.style.backgroundColor = "#ffd7f6";
