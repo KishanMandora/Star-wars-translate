@@ -58,5 +58,3 @@ mandoBtn.addEventListener("click", () => {
   sithBtn.style.backgroundColor = "#ffd7f6";
   yodaBtn.style.backgroundColor = "#ffd7f6";
 });
-
-// chnage url
