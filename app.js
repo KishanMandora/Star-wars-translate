@@ -12,13 +12,12 @@ const myVoice = voices[45];
 let url = "";
 
 function defaultOp() {
-  submitBtn.addEventListener("click", speakMe);
-  mainImg.setAttribute("src", "./images/mando.gif");
-  msgTxt.innerText = "There is still hope";
-  url = "https://api.funtranslations.com/translate/mandalorian.json";
-  mandoBtn.style.backgroundColor = "#ff853e";
+  mainImg.setAttribute("src", "./images/yoda.gif");
+  msgTxt.innerText = "May the force be with you";
+  url = "https://api.funtranslations.com/translate/yoda.json";
+  yodaBtn.style.backgroundColor = "#95ff64";
+  mandoBtn.style.backgroundColor = "#ffd7f6";
   sithBtn.style.backgroundColor = "#ffd7f6";
-  yodaBtn.style.backgroundColor = "#ffd7f6";
 }
 
 defaultOp();
@@ -38,14 +37,7 @@ function speakMe() {
     });
 }
 
-yodaBtn.addEventListener("click", () => {
-  mainImg.setAttribute("src", "./images/yoda.gif");
-  msgTxt.innerText = "May the force be with you";
-  url = "https://api.funtranslations.com/translate/yoda.json";
-  yodaBtn.style.backgroundColor = "#95ff64";
-  mandoBtn.style.backgroundColor = "#ffd7f6";
-  sithBtn.style.backgroundColor = "#ffd7f6";
-});
+yodaBtn.addEventListener("click", defaultOp);
 
 sithBtn.addEventListener("click", () => {
   mainImg.setAttribute("src", "./images/sith.gif");
@@ -56,4 +48,12 @@ sithBtn.addEventListener("click", () => {
   yodaBtn.style.backgroundColor = "#ffd7f6";
 });
 
-mandoBtn.addEventListener("click", defaultOp);
+mandoBtn.addEventListener("click", () => {
+  submitBtn.addEventListener("click", speakMe);
+  mainImg.setAttribute("src", "./images/mando.gif");
+  msgTxt.innerText = "There is still hope";
+  url = "https://api.funtranslations.com/translate/mandalorian.json";
+  mandoBtn.style.backgroundColor = "#ff853e";
+  sithBtn.style.backgroundColor = "#ffd7f6";
+  yodaBtn.style.backgroundColor = "#ffd7f6";
+});
